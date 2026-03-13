@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManageBot | Roblox Moderation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ededed; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(180deg, #fff 0%, #888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="selection:bg-white selection:text-black">
+
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-full px-6 py-3">
+            <div class="font-bold text-xl tracking-tighter">MANAGE<span class="text-gray-500">BOT</span></div>
+            <div class="space-x-8 text-sm font-medium hidden md:flex">
+                <a href="#features" class="hover:text-white transition-colors">Features</a>
+                <a href="#commands" class="hover:text-white transition-colors">Commands</a>
+                <a href="https://github.com" class="hover:text-white transition-colors">GitHub</a>
+            </div>
+            <a href="#" class="bg-white text-black px-5 py-2 rounded-full text-xs font-bold hover:bg-gray-200 transition-all">Invite Bot</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="mb-4 px-3 py-1 border border-gray-800 rounded-full text-xs font-medium text-gray-400 uppercase tracking-widest">
+            Direct Roblox Integration
+        </div>
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight gradient-text">
+            Control your game,<br>from anywhere.
+        </h1>
+        <p class="max-w-xl text-gray-500 text-lg md:text-xl mb-10">
+            ManageBot is the seamless bridge between your community and Roblox. High-speed moderation, blacklisting, and live session hosting.
+        </p>
+        <div class="flex gap-4">
+            <button class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">Get Started</button>
+            <button class="glass px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">Documentation</button>
+        </div>
+    </section>
+
+    <section id="features" class="max-w-6xl mx-auto py-20 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-gray-800 rounded-lg mb-6 flex items-center justify-center">⚡</div>
+                <h3 class="text-xl font-bold mb-3">Live Hosting</h3>
+                <p class="text-gray-500 leading-relaxed">Instantly set up and manage moderation sessions with direct game-server pings.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-gray-800 rounded-lg mb-6 flex items-center justify-center">🛡️</div>
+                <h3 class="text-xl font-bold mb-3">Global Blacklist</h3>
+                <p class="text-gray-500 leading-relaxed">Keep bad actors out automatically across all your sub-games and instances.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-gray-800 rounded-lg mb-6 flex items-center justify-center">💻</div>
+                <h3 class="text-xl font-bold mb-3">Remote Execution</h3>
+                <p class="text-gray-500 leading-relaxed">Run custom commands or administrative scripts directly from your dashboard.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-gray-900">
+        <p class="text-gray-600 text-sm">© 2026 ManageBot. Not affiliated with Roblox Corp.</p>
+    </footer>
+
+</body>
+</html>
